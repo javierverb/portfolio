@@ -9,6 +9,11 @@
     color: var(--emphasis-color);
   }
 }
+@media screen and (max-width: 420px) {
+  #hello h1 {
+    font-size: 3rem;
+  }
+}
 
 .code {
   color: #4d4e54;

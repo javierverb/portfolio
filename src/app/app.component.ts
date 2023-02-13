@@ -1,22 +1,10 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements AfterViewInit {
-  @ViewChild('returnToTop') scrollTop: any;
-
-  ngAfterViewInit() {
-    window.onscroll = () => {
-      if (window.scrollY > 300) {
-        this.scrollTop.nativeElement.style.visibility = 'visible';
-      } else {
-        this.scrollTop.nativeElement.style.visibility = 'hidden';
-      }
-    };
-  }
-
+export class AppComponent {
   constructor() {}
 }
