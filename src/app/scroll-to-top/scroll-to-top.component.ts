@@ -14,18 +14,9 @@ export class ScrollToTopComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (
-      (window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop) > this.showScrollHeight
-    ) {
+    if (window.scrollY > 300) {
       this.showScroll = true;
-    } else if (
-      this.showScroll &&
-      (window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop) < this.hideScrollHeight
-    ) {
+    } else {
       this.showScroll = false;
     }
   }
@@ -33,13 +24,10 @@ export class ScrollToTopComponent implements OnInit {
   ngOnInit() {}
 
   scrollToTop() {
-    (function smoothscroll() {
-      const currentScroll =
-        document.documentElement.scrollTop || document.body.scrollTop;
-      if (currentScroll > 0) {
-        window.requestAnimationFrame(smoothscroll);
-        window.scrollTo(0, currentScroll - currentScroll / 5);
-      }
-    })();
+    const currentScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      window.scrollTo(0, 0);
+    }
   }
 }
