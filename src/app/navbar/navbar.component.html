@@ -1,0 +1,81 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid navbar__content">
+    <a class="navbar-brand c-white" href="#">
+      <pre class="my-auto c-emphasis">&lt;J/&gt;</pre>
+    </a>
+    <b class="navbar-brand__name c-white">Javier Verblud</b>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item mt-1">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: section == 'home' }"
+            aria-current="page"
+            href="#home"
+            (click)="section = 'home'"
+          >
+            <pre>&lt;Home&gt;</pre>
+          </a>
+        </li>
+        <li class="nav-item mx-md-3">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: section == 'portfolio' }"
+            (click)="section = 'portfolio'"
+            href="#portfolio"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item mx-md-3">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: section == 'about' }"
+            (click)="section = 'about'"
+            href="#about"
+            >About</a
+          >
+        </li>
+        <li class="nav-item mx-md-3">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: section == 'contact' }"
+            (click)="section = 'contact'"
+            href="#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item me-3">
+          <a
+            target="_blank"
+            class="nav-link"
+            href="https://www.linkedin.com/in/javierverb/"
+            ><i class="bi bi-linkedin me-1"></i>
+            <span> LinkedIn</span>
+          </a>
+        </li>
+        <li class="nav-item me-5">
+          <a
+            target="_blank"
+            class="nav-link"
+            href="https://github.com/javierverb/"
+            ><i class="bi bi-github me-1"></i>
+            <span> GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

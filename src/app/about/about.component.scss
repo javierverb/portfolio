@@ -1,0 +1,29 @@
+.section {
+  margin-left: 1.5rem;
+  &__title {
+    font-family: "AftikaBold";
+    font-size: 2rem;
+    color: var(--emphasis-color);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+  &__description {
+    color: white;
+    font-size: 1.2rem;
+    b {
+      font-size: 1.3rem;
+      text-decoration: underline;
+    }
+  }
+}
+.section-container {
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+@media (max-width: 520px) {
+  .section-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
