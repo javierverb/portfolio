@@ -1,7 +1,7 @@
 <a
   disabled
   id="return-to-top"
-  [ngClass]="{ 'button-scroll-to-top--show': showScroll }"
+  *ngIf="showScroll"
   (click)="scrollToTop()"
   class="c-pointer"
 >
