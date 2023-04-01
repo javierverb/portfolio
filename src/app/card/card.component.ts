@@ -15,6 +15,10 @@ export class CardComponent implements OnInit {
     website: '',
   };
 
+  goTo(url: string) {
+    window.open(url, '_blank');
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
