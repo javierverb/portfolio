@@ -14,8 +14,6 @@ export class ScrollToTopComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    console.log(window.scrollY);
-
     if (window.scrollY > 300) {
       this.showScroll = true;
     } else {

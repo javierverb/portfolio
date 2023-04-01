@@ -6,9 +6,10 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, AboutComponent, PortfolioComponent, ContactComponent, ScrollToTopComponent],
+  declarations: [AppComponent, NavbarComponent, AboutComponent, PortfolioComponent, ContactComponent, ScrollToTopComponent, CardComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

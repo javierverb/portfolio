@@ -1,0 +1,36 @@
+.card {
+  background-color: var(--body-color);
+  color: white;
+  max-width: 300px !important;
+}
+.card-title a {
+  color: white !important;
+}
+.card-text {
+  b {
+    text-decoration: underline;
+  }
+}
+.card-img-top {
+  object-fit: scale-down;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1120px) {
+  .card {
+    max-width: 450px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    width: 100%;
+    object-fit: scale-down;
+  }
+}
+.badge {
+  background-color: gray;
+  margin: 4px;
+  font-size: 13px;
+}

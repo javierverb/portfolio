@@ -1,0 +1,23 @@
+<div class="card rounded mx-auto mb-5">
+  <img
+    class="card-img-top rounded"
+    src="{{ company.imagePath }}"
+    alt="Card image cap"
+  />
+  <div class="card-body text-center d-flex flex-column">
+    <h5 class="card-title">
+      <b>
+        <a target="_blank" href="{{ company.website }}">
+          {{ company.name }}
+        </a>
+      </b>
+    </h5>
+    <p class="card-text" [innerHTML]="company.description"></p>
+    <div class="skills">
+      <hr />
+      <span class="badge" *ngFor="let stack of company.stack">
+        {{ stack }}
+      </span>
+    </div>
+  </div>
+</div>
