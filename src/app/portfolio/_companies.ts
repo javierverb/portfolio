@@ -8,6 +8,24 @@ export interface Company {
 
 export const companies: Company[] = [
   {
+    name: 'Equinox',
+    website: 'https://www.equinox.com/',
+    description: `Equinox is a luxury fitness company with <b>more than 100
+          clubs</b> in the US, Canada, and the UK.`,
+    stack: [
+      'Python',
+      'Rundeck',
+      'Bash',
+      'General Scripting',
+      'AWS',
+      'Terraform',
+      'Docker',
+      'Microservices',
+      'GH Actions',
+    ],
+    imagePath: 'assets/img/equinox.jpg',
+  },
+  {
     name: 'Moni',
     website: 'https://moni.com.ar/',
     description:

@@ -2,10 +2,12 @@
   <div class="section mb-5 mt-3">
     <span class="section__title">Portfolio</span>
   </div>
-  <div class="d-xl-flex d-block">
+  <swiper-container #swiperRef init="false" pagination loop navigation>
     <ng-container *ngFor="let company of companies">
-      <app-card class="mx-auto" [company]="company"></app-card>
+      <swiper-slide>
+        <app-card class="mx-auto" [company]="company"></app-card>
+      </swiper-slide>
     </ng-container>
-  </div>
+  </swiper-container>
   <br />
 </section>
