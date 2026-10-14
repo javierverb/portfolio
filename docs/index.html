@@ -1,12 +1,400 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
     <title>Javier Verblud</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}:root{--bs-btn-close-filter: }:root{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }:root{--emphasis-color:#11f5d5;--alternative-body-color:#27272b;--body-color:#2d2e32}body{background-color:var(--body-color);font-family:gravitica}@font-face{font-family:gravitica;src:local("gravitica"),url(gravitica.8b601c02a0d3517b.otf) format("truetype")}</style><link rel="stylesheet" href="styles.c20398b5a1a2af9d.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.c20398b5a1a2af9d.css"></noscript></head>
-  <body>
-    <app-root></app-root>
-  <script src="runtime.332e9e9b7bbd6596.js" type="module"></script><script src="polyfills.c664c55a7758bfde.js" type="module"></script><script src="scripts.2e8a10e819fa0aea.js" defer></script><script src="main.5231d78631856914.js" type="module"></script>
-
-</body></html>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Javier Verblud, Python and full stack developer."
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-DR-78Lqz.ico" />
+    <script type="module" crossorigin src="/assets/index-qJ9fuETD.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-wFfBGf7C.css">
+  </head>
+  <body class="bg-ink font-sans text-slate-200 antialiased">
+    <nav id="navbar" class="fixed inset-x-0 top-0 z-50 border-b border-line/70 bg-ink/85 backdrop-blur-md">
+      <div class="mx-auto flex h-16 max-w-[1800px] items-center gap-8 px-5 sm:px-8 lg:px-12 xl:px-16">
+        <a class="flex items-center gap-3" href="#home">
+          <span class="font-mono text-lg text-accent">&lt;J/&gt;</span>
+          <span class="font-semibold text-white">Javier Verblud</span>
+        </a>
+        <div class="hidden items-center gap-1 lg:flex">
+          <a data-nav="home" aria-current="page" class="rounded-md px-3 py-2 text-sm font-semibold text-muted transition-colors hover:text-white aria-[current=page]:text-accent" href="#home">Home</a>
+          <a data-nav="portfolio" class="rounded-md px-3 py-2 text-sm font-semibold text-muted transition-colors hover:text-white aria-[current=page]:text-accent" href="#portfolio">Portfolio</a>
+          <a data-nav="about" class="rounded-md px-3 py-2 text-sm font-semibold text-muted transition-colors hover:text-white aria-[current=page]:text-accent" href="#about">About</a>
+          <a data-nav="contact" class="rounded-md px-3 py-2 text-sm font-semibold text-muted transition-colors hover:text-white aria-[current=page]:text-accent" href="#contact">Contact</a>
+        </div>
+        <div class="ml-auto hidden items-center gap-5 lg:flex">
+          <a class="text-sm font-semibold text-muted transition-colors hover:text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/in/javierverb/">
+            <i class="fa-brands fa-linkedin mr-1.5"></i>LinkedIn
+          </a>
+          <a class="text-sm font-semibold text-muted transition-colors hover:text-white" target="_blank" rel="noopener" href="https://github.com/javierverb/">
+            <i class="fa-brands fa-github mr-1.5"></i>GitHub
+          </a>
+        </div>
+        <button
+          id="mobile-menu-button"
+          class="ml-auto flex h-10 w-10 items-center justify-center rounded-md text-white hover:bg-white/5 lg:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu-panel"
+          aria-label="Open menu"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    
+    <div id="mobile-menu-drawer" class="pointer-events-none fixed inset-0 z-[100] lg:hidden" aria-hidden="true">
+      <div
+        id="mobile-menu-backdrop"
+        class="pointer-events-none absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300"
+        aria-hidden="true"
+      ></div>
+      <div
+        id="mobile-menu-panel"
+        class="pointer-events-auto absolute top-0 right-0 flex h-full w-[min(18rem,85vw)] translate-x-full flex-col border-l border-line bg-panel transition-transform duration-300"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation"
+      >
+        <div class="flex-1 overflow-y-auto px-3 pt-6 pb-6">
+          <a data-nav="home" aria-current="page" class="block rounded-md px-3 py-3 font-semibold text-muted hover:bg-white/5 hover:text-white aria-[current=page]:text-accent" href="#home">Home</a>
+          <a data-nav="portfolio" class="block rounded-md px-3 py-3 font-semibold text-muted hover:bg-white/5 hover:text-white aria-[current=page]:text-accent" href="#portfolio">Portfolio</a>
+          <a data-nav="about" class="block rounded-md px-3 py-3 font-semibold text-muted hover:bg-white/5 hover:text-white aria-[current=page]:text-accent" href="#about">About</a>
+          <a data-nav="contact" class="block rounded-md px-3 py-3 font-semibold text-muted hover:bg-white/5 hover:text-white aria-[current=page]:text-accent" href="#contact">Contact</a>
+          <hr class="my-4 border-line" />
+          <a class="block rounded-md px-3 py-3 font-semibold text-muted hover:bg-white/5 hover:text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/in/javierverb/">
+            <i class="fa-brands fa-linkedin mr-2"></i>LinkedIn
+          </a>
+          <a class="block rounded-md px-3 py-3 font-semibold text-muted hover:bg-white/5 hover:text-white" target="_blank" rel="noopener" href="https://github.com/javierverb/">
+            <i class="fa-brands fa-github mr-2"></i>GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <main class="pt-16">
+      <section id="home" class="flex min-h-[calc(100svh-4rem)] scroll-mt-16 items-center">
+        <div class="mx-auto grid w-full max-w-[1800px] items-center gap-12 px-5 py-16 sm:px-8 lg:px-12 xl:px-16 lg:grid-cols-[1.3fr_1fr] xl:gap-16">
+          <div>
+            <pre class="font-mono text-sm text-slate-600">&lt;h1&gt;</pre>
+            <h1 class="my-3 font-display text-[2.6rem] leading-[1.08] text-white sm:text-6xl lg:text-[4.25rem] xl:text-[5rem] 2xl:text-[5.5rem]">
+              <span class="sm:whitespace-nowrap">Hello, I'm <span class="text-accent">Javier</span>,</span><br />
+              <span class="sm:whitespace-nowrap">Python Developer</span>
+            </h1>
+            <pre class="font-mono text-sm text-slate-600">&lt;/h1&gt;</pre>
+            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-muted xl:text-xl">
+              Full stack developer with more than seven years of experience in Python and Django,
+              building products for companies in Argentina, the USA, and Spain.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                download
+                href="javier_verblud_cv.pdf"
+                class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-semibold text-ink transition hover:bg-accent/90"
+              >
+                <i class="fa-solid fa-download text-sm"></i>Download CV
+              </a>
+              <a
+                href="https://calendly.com/javierverb/lets-talk"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center gap-2 rounded-lg border border-line px-5 py-2.5 font-semibold text-white transition hover:border-muted"
+              >
+                <i class="fa-regular fa-calendar text-sm"></i>Book a call
+              </a>
+            </div>
+            <div class="mt-8 flex items-center gap-5 text-xl text-muted">
+              <a class="transition-colors hover:text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/in/javierverb/" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="transition-colors hover:text-white" target="_blank" rel="noopener" href="https://github.com/javierverb/" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a class="transition-colors hover:text-white" href="mailto:javier2mil8@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hidden justify-end lg:flex">
+            <img
+              src="/assets/profile-v2-3a02qaEO.webp"
+              class="max-h-[36rem] w-auto rounded-2xl border border-line object-contain"
+              alt="Javier Verblud"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="scroll-mt-16 border-y border-line/70 bg-panel/40">
+        <div class="mx-auto max-w-[1800px] px-5 py-20 sm:px-8 lg:px-12 xl:px-16">
+          <p class="font-mono text-sm text-accent">Portfolio</p>
+          <h2 class="mt-2 font-display text-3xl text-white sm:text-4xl">Selected work</h2>
+      
+          <article class="mt-10 grid gap-6 rounded-xl border border-line bg-panel p-6 sm:grid-cols-[auto_1fr] sm:p-8">
+            <a href="https://capybot.ai" target="_blank" rel="noopener" class="shrink-0">
+              <img class="h-24 w-24 rounded-xl bg-white object-contain p-1" src="/assets/capybot-EgkqkDE7.webp" alt="Capybot logo" />
+            </a>
+            <div>
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-xl font-semibold text-white">Capybot</h3>
+                <span class="rounded-full border border-accent/40 px-2.5 py-0.5 text-xs font-semibold text-accent">Personal project</span>
+              </div>
+              <p class="mt-3 max-w-2xl leading-relaxed text-muted">
+                An AI agent for businesses: a <span class="font-semibold text-slate-200">virtual agenda</span> with paid bookings and a
+                <span class="font-semibold text-slate-200">WhatsApp assistant</span> that answers clients and takes appointments.
+              </p>
+              <ul class="mt-5 flex flex-wrap gap-1.5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Django</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">DRF</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Angular</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Go</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">LangChain</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Celery</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">PostgreSQL</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Mercado Pago</li>
+              </ul>
+              <a class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline" href="https://capybot.ai" target="_blank" rel="noopener">
+                Visit capybot.ai <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+              </a>
+            </div>
+          </article>
+      
+          <h3 class="mt-14 text-sm font-semibold tracking-wide text-muted uppercase">Experience</h3>
+          <div class="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="flex flex-col rounded-xl border border-line bg-panel p-5 transition hover:-translate-y-0.5 hover:border-muted/50">
+              <div class="flex items-center gap-4">
+                <img class="h-12 w-12 rounded-lg bg-white object-contain" src="/assets/equinox-DBn40XyZ.jpg" alt="Equinox logo" />
+                <div>
+                  <h4 class="font-semibold text-white"><a class="hover:underline" target="_blank" rel="noopener" href="https://www.equinox.com/">Equinox</a></h4>
+                  <p class="text-xs text-muted">equinox.com</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                A luxury fitness company with <span class="font-semibold text-slate-200">more than 100 clubs</span> in the US, Canada, and the UK.
+              </p>
+              <ul class="mt-auto flex flex-wrap gap-1.5 pt-5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Rundeck</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Bash</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">AWS</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Terraform</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Docker</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Microservices</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">GH Actions</li>
+              </ul>
+            </article>
+      
+            <article class="flex flex-col rounded-xl border border-line bg-panel p-5 transition hover:-translate-y-0.5 hover:border-muted/50">
+              <div class="flex items-center gap-4">
+                <img class="h-12 w-12 rounded-lg bg-white object-contain" src="data:image/jpeg;base64,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" alt="Moni logo" />
+                <div>
+                  <h4 class="font-semibold text-white"><a class="hover:underline" target="_blank" rel="noopener" href="https://moni.com.ar/">Moni</a></h4>
+                  <p class="text-xs text-muted">moni.com.ar</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Argentinian Fintech that manages and grants <span class="font-semibold text-slate-200">more than 60,000 loans per year</span>.
+              </p>
+              <ul class="mt-auto flex flex-wrap gap-1.5 pt-5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Django</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">DRF</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Angular</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Celery</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Asyncio</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">k8s</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Docker</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">PostgreSQL</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Gitlab Pipelines</li>
+              </ul>
+            </article>
+      
+            <article class="flex flex-col rounded-xl border border-line bg-panel p-5 transition hover:-translate-y-0.5 hover:border-muted/50">
+              <div class="flex items-center gap-4">
+                <img class="h-12 w-12 rounded-lg bg-white object-contain" src="data:image/jpeg;base64,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" alt="Chekin logo" />
+                <div>
+                  <h4 class="font-semibold text-white"><a class="hover:underline" target="_blank" rel="noopener" href="https://chekin.com/">Chekin</a></h4>
+                  <p class="text-xs text-muted">chekin.com</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Travel technology platform for <span class="font-semibold text-slate-200">online check-in and guest registration</span>, with more than 100 check-ins per month successfully handled.
+              </p>
+              <ul class="mt-auto flex flex-wrap gap-1.5 pt-5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Django</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">DRF</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Celery</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">RabbitMQ</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">k8s</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Docker</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">PostgreSQL</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">GH Actions</li>
+              </ul>
+            </article>
+      
+            <article class="flex flex-col rounded-xl border border-line bg-panel p-5 transition hover:-translate-y-0.5 hover:border-muted/50">
+              <div class="flex items-center gap-4">
+                <img class="h-12 w-12 rounded-lg bg-white object-contain" src="/assets/examity-mQXUasCl.jpeg" alt="Examity logo" />
+                <div>
+                  <h4 class="font-semibold text-white"><a class="hover:underline" target="_blank" rel="noopener" href="https://www.examity.com/">Examity</a></h4>
+                  <p class="text-xs text-muted">examity.com</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Flexible and secure online proctoring system with <span class="font-semibold text-slate-200">more than 500 clients</span> around the world, including universities.
+              </p>
+              <ul class="mt-auto flex flex-wrap gap-1.5 pt-5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Flask</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Angular</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Go</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">MSSQL</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Docker</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Microservices</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">GH Actions</li>
+              </ul>
+            </article>
+      
+            <article class="flex flex-col rounded-xl border border-line bg-panel p-5 transition hover:-translate-y-0.5 hover:border-muted/50">
+              <div class="flex items-center gap-4">
+                <img class="h-12 w-12 rounded-lg bg-white object-contain" src="data:image/jpeg;base64,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" alt="Venmo logo" />
+                <div>
+                  <h4 class="font-semibold text-white"><a class="hover:underline" target="_blank" rel="noopener" href="https://venmo.com/">Venmo</a></h4>
+                  <p class="text-xs text-muted">venmo.com</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Peer-to-peer mobile payment platform by PayPal. As of 2021 it processed around <span class="font-semibold text-slate-200">40 billion in transactions per year</span>.
+              </p>
+              <ul class="mt-auto flex flex-wrap gap-1.5 pt-5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Django</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Terraform</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Datadog</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Snowflake</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Kafka</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Microservices</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">GH Actions</li>
+              </ul>
+            </article>
+      
+            <article class="flex flex-col rounded-xl border border-line bg-panel p-5 transition hover:-translate-y-0.5 hover:border-muted/50">
+              <div class="flex items-center gap-4">
+                <img class="h-12 w-12 rounded-lg bg-white object-contain" src="/assets/ticketek-BFzuhm8F.jpeg" alt="Ticketek logo" />
+                <div>
+                  <h4 class="font-semibold text-white"><a class="hover:underline" target="_blank" rel="noopener" href="https://www.ticketek.com.ar/">Ticketek</a></h4>
+                  <p class="text-xs text-muted">ticketek.com.ar</p>
+                </div>
+              </div>
+              <p class="mt-4 text-sm leading-relaxed text-muted">
+                Argentinian ticket sales company, part of the <span class="font-semibold text-slate-200">top 10</span> ticketing platforms.
+              </p>
+              <ul class="mt-auto flex flex-wrap gap-1.5 pt-5">
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Python</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Django</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">AngularJS</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Redis</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Celery</li>
+                <li class="rounded-md border border-line px-2 py-0.5 text-xs text-slate-300">Ionic</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="scroll-mt-16">
+        <div class="mx-auto grid max-w-[1800px] gap-12 px-5 py-20 sm:px-8 lg:px-12 xl:px-16 lg:grid-cols-[1.6fr_1fr]">
+          <div>
+            <p class="font-mono text-sm text-accent">About</p>
+            <h2 class="mt-2 font-display text-3xl text-white sm:text-4xl">About me</h2>
+            <div class="mt-6 space-y-4 leading-relaxed text-muted">
+              <p>
+                I'm a software developer with more than seven years of experience in
+                <span class="font-semibold text-slate-200">Python</span> and more than six years in
+                <span class="font-semibold text-slate-200">Django</span>. My expertise extends to
+                <span class="font-semibold text-slate-200">Angular</span>, where I have worked for more than three years.
+                I'm an autodidact, always seeking to expand my knowledge and skills.
+              </p>
+              <p>
+                At Chekin I had the opportunity to <span class="font-semibold text-slate-200">lead a small team of two developers</span>,
+                where we migrated and refactored a deprecated part of the code of a platform that automates check-in for providers
+                such as Booking.com and Airbnb.
+              </p>
+              <p>
+                I have worked for companies in <span class="font-semibold text-slate-200">Argentina, the USA, and Spain</span>, including
+                Moni, a Fintech that provides more than 60,000 loans per year; Examity, an anti-cheat system for test-takers used by
+                more than 60 universities in the USA; and Venmo, the well-known wallet by PayPal.
+              </p>
+              <p>
+                In my free time I (really) love to play football with friends, spend time with my family, and build new things just for fun.
+              </p>
+            </div>
+          </div>
+          <dl class="grid grid-cols-2 content-start gap-4 lg:mt-16">
+            <div class="rounded-xl border border-line bg-panel p-5">
+              <dt class="text-xs text-muted">Python</dt>
+              <dd class="mt-1 font-display text-3xl text-white">7+ <span class="font-sans text-sm font-normal text-muted">years</span></dd>
+            </div>
+            <div class="rounded-xl border border-line bg-panel p-5">
+              <dt class="text-xs text-muted">Django</dt>
+              <dd class="mt-1 font-display text-3xl text-white">6+ <span class="font-sans text-sm font-normal text-muted">years</span></dd>
+            </div>
+            <div class="rounded-xl border border-line bg-panel p-5">
+              <dt class="text-xs text-muted">Angular</dt>
+              <dd class="mt-1 font-display text-3xl text-white">3+ <span class="font-sans text-sm font-normal text-muted">years</span></dd>
+            </div>
+            <div class="rounded-xl border border-line bg-panel p-5">
+              <dt class="text-xs text-muted">Countries</dt>
+              <dd class="mt-1 font-display text-3xl text-white">3 <span class="font-sans text-sm font-normal text-muted">AR · US · ES</span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section id="contact" class="scroll-mt-16 border-t border-line/70 bg-panel/40">
+        <div class="mx-auto max-w-[1800px] px-5 py-20 sm:px-8 lg:px-12 xl:px-16 text-center">
+          <p class="font-mono text-sm text-accent">Contact</p>
+          <h2 class="mt-2 font-display text-3xl text-white sm:text-4xl">Let's talk</h2>
+          <p class="mx-auto mt-4 max-w-xl text-muted">
+            <i class="fa-solid fa-location-dot mr-1.5"></i>
+            <a class="hover:text-white" target="_blank" rel="noopener" href="https://www.google.com/maps/place/C%C3%B3rdoba/data=!4m2!3m1!1s0x9432985f478f5b69:0xb0a24f9a5366b092?sa=X&ved=2ahUKEwjn27PNupP9AhUHqZUCHej5DcwQ8gF6BAgNEAI">Cordoba, Argentina</a>
+          </p>
+          <div class="mx-auto mt-10 grid max-w-3xl gap-4 sm:grid-cols-3">
+            <a class="rounded-xl border border-line bg-panel p-5 text-left transition hover:border-muted/50" href="mailto:javier2mil8@gmail.com">
+              <i class="fa-solid fa-envelope text-accent"></i>
+              <p class="mt-3 font-semibold text-white">Email</p>
+              <p class="mt-1 truncate text-sm text-muted">javier2mil8@gmail.com</p>
+            </a>
+            <a class="rounded-xl border border-line bg-panel p-5 text-left transition hover:border-muted/50" target="_blank" rel="noopener" href="https://www.linkedin.com/in/javierverb/">
+              <i class="fa-brands fa-linkedin text-accent"></i>
+              <p class="mt-3 font-semibold text-white">LinkedIn</p>
+              <p class="mt-1 text-sm text-muted">in/javierverb</p>
+            </a>
+            <a class="rounded-xl border border-line bg-panel p-5 text-left transition hover:border-muted/50" target="_blank" rel="noopener" href="https://calendly.com/javierverb/lets-talk">
+              <i class="fa-regular fa-calendar text-accent"></i>
+              <p class="mt-3 font-semibold text-white">Book a call</p>
+              <p class="mt-1 text-sm text-muted">Calendly</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-line/70">
+      <div class="mx-auto flex max-w-[1800px] flex-col items-center justify-between gap-2 px-5 py-8 sm:px-8 lg:px-12 xl:px-16 text-sm text-muted sm:flex-row">
+        <span>© Javier Verblud</span>
+        <span>Made with ❤️ by <b class="text-slate-200">me</b> 😉</span>
+      </div>
+    </footer>
+    <button
+      id="return-to-top"
+      type="button"
+      class="fixed right-5 bottom-5 z-40 hidden h-11 w-11 items-center justify-center rounded-full border border-line bg-panel text-muted shadow-lg transition-colors hover:text-white"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
